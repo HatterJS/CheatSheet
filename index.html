@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Временный запрет индексации страницы-->
+    <meta name="robots" content="none">
+    <title>Cheat Sheet</title>
+    <link rel="stylesheet" href="css/null.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="shortcut icon" type="image/gif" href="favicon/favicon.gif"/>
+</head>
+<body>
+    <!--Loader-->
+    <!--<div class="loaderOnStart">
+        <div class="mainBox">
+            <div class="loader02">
+                <div class="border02">
+                    <div class="shapeEye01"></div>
+                    <div class="shapeEye02"></div>
+                </div>
+                <p style="animation-delay: 0s; color: rgba(255, 255, 255, 0.637);">loading...</p>
+            </div>
+        </div>
+    </div>-->
+    <!--End of Loader-->
+    <!--Top sidebar-->
+    <div class="header">
+        <div class="siteLogo"><a href="http://energodar.top" style="color: white;">Energodar.top</a></div>
+        <div class="switch">
+            <div class="lightButton"></div>
+        </div>
+    </div>    
+    <!--End of Top sidebar-->
+    <h1>Cheat Sheet</h1>
+    <h5>This site will help you with <span style="color: rgb(255, 90, 20); font-weight: 800;">HTML</span> <span style="color: rgb(20, 170, 255); font-weight: 800;">CSS</span> and <span style="color: rgb(255, 196, 0); font-weight: 800;">Java Script</span> </h5>
+    <div class="page"> 
+        <!--Top bookmarks block-->
+        <div class="topBookmarksBlock">
+            <div class="bookmark" id="bookmarkHTML">
+                <p class="bookmarkText">HTML</p>
+            </div>
+            <div class="bookmark" id="bookmarkCSS">
+                <p class="bookmarkText">CSS</p>
+            </div>
+            <div class="bookmark" id="bookmarkJS">
+                <p class="bookmarkText">JS</p>
+            </div>
+            <div class="filler"></div>
+        </div>        
+        <!--End of top bookmarks block-->
+        <!--Main block-->
+        <div class="mainBlock">
+            <div class="cheatSheetBlock">
+                <div class="bookmarksBodies" style="display: flex;">
+                    <div class="bookmarksBodies__content">
+                        <span style="display: none;">MAIN</span>
+                        <div class="tip">
+                            <h3>META</h3>
+                            <input type="checkbox" class="readMore" id="readMoreMeta" />
+                            <div class="cover">
+                                <p><span><</span><span class="tagInText">!DOCTYPE</span><span class="optionInText"> html</span><span>></span>
+                                <span class="importantInText">*required</span><br>
+                                Tells the computer that it’s looking at an HTML 
+                                page. Put this at the top of your HTML document.</p>
+
+                                <p><span><</span><span class="tagInText">meta</span> <span class="optionInText">charset</span><span>=</span><span class="valueInText">"utf-8"</span><span>> </span><span class="importantInText">*required</span><br>
+                                Tells the computer that you are using the UTF-8 
+                                character set (which is the character set for most 
+                                of the world wide web). Guards against your site 
+                                turning into gibberish.</p>
+
+                                <p><span><</span><span class="tagInText">title</span><span>></span>..<span><</span><span class="tagInText">/title</span><span>> </span><span class="importantInText">*required</span><br>
+                                Gives your site a title in the top of the browser bar.</p>
+
+                                <p><span><</span><span class="tagInText">script </span><span class="optionInText">src </span><span>= </span><span class="valueInText">"http://www.example.com/
+                                scripts/myjavascript.js"</span><span>></span><span><</span><span class="tagInText">/script></span>
+                                Links to external JavaScript files via the src
+                                attribute.</p>
+
+                                <p><span><</span><span class="tagInText">link </span><span class="optionInText">rel </span><span>= </span><span class="valueInText">"stylesheet" </span><span class="optionInText">href </span><span>= </span><span class="valueInText">"http://www.example.com/css/stye.css"</span><span>></span><br>
+                                Links to external stylesheets via the href attribute. 
+                                Use the rel attribute to tell the computer that this 
+                                is a stylesheet.</p>
+
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+
+                                <p><span><</span><span class="tagInText">!DOCTYPE</span><span class="optionInText"> html</span><span>></span><br>
+                                <span><</span><span class="tagInText">html</span><span class="optionInText"> lang</span>=<span class="valueInText">"en"</span><span>></span><br>
+                                <span><</span><span class="tagInText">head</span><span>></span><br>
+                                <span>&emsp; <</span><span class="tagInText">meta</span><span class="optionInText"> charset</span>=<span class="valueInText">"UTF-8"</span><span>></span><br>
+                                <span>&emsp; <</span><span class="tagInText">meta</span><span class="optionInText"> http-equiv</span>=<span class="valueInText">"X-UA-Compatible" </span><span class="optionInText">content</span>=<span class="valueInText">"IE=edge"</span><span>></span><br>
+                                <span>&emsp; <</span><span class="tagInText">meta</span><span class="optionInText"> name</span>=<span class="valueInText">"viewport" </span><span class="optionInText">content</span>=<span class="valueInText">"width=device-width, initial-scale=1.0"</span><span>></span><br>
+                                <span>&emsp; <</span><span class="tagInText">meta</span><span class="optionInText"> name</span>=<span class="valueInText">"robots" </span><span class="optionInText">content</span>=<span class="valueInText">"none"</span><span>></span><br>
+                                <span>&emsp; <</span><span class="tagInText">title</span><span>>Cheat Sheet<span><</span>/<span class="tagInText">title</span><span>></span><br>
+                                <span>&emsp; <</span><span class="tagInText">link</span><span class="optionInText"> rel</span>=<span class="valueInText">"stylesheet" </span><span class="optionInText">href</span>=<span class="valueInText">"css/style.css" </span><span class="optionInText">type</span>=<span class="valueInText">"text/css"</span><span>></span><br>
+                                <span><</span><span class="tagInText">/head</span><span>></span><br>
+                                </p>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMoreMeta" class="readMoreButton"></label>                   
+                        </div>
+                        <div class="tip">
+                            <h3>CONTENT</h3>
+                            <input type="checkbox" class="readMore" id="readMoreContent" />
+                            <div class="cover">
+                                <p><span><</span><span class="tagInText">div</span><span>></span><span><</span><span class="tagInText">/div</span><span>></span><br>
+                                The workhorse of the HTML tags. Use divs for 
+                                your different site sections, sidebars, footers, etc.<br></p>
+
+                                <p><span><</span><span class="tagInText">p</span><span>></span>...<span><</span><span class="tagInText">/p</span><span>></span><br>
+                                Use for paragraphs!<br></p>
+
+                                <p><span><</span><span class="tagInText">img</span> <span class="optionInText">src</span>=<span class="valueInText">"http://www.example.com/image/
+                                image.jpg" </span><span class="optionInText">alt</span>=<span class="valueInText">"My Image" </span><span>/></span><br>
+                                Adds images to your site. Put the image link in the 
+                                src attribute and the name in the alt attribute.<br></p>
+
+                                <p style="background-color: yellow;"><span><</span><span class="tagInText">ul</span><span>></span>...<span><</span><span class="tagInText">/ul</span><span>></span><br>
+                                Unordered lists, perfect for bulleted lists and such.<br></p>
+
+                                <p style="background-color: yellow;"><span><</span><span class="tagInText">ol</span><span>></span>...<span><</span><span class="tagInText">/ol</span><span>></span><br>
+                                Ordered lists, good for numbered or alphabetical lists.<br></p>
+
+                                <p style="background-color: yellow;"><span><</span><span class="tagInText">li</span><span>></span>...<span><</span><span class="tagInText">/li</span><span>></span><br>
+                                Each list item goes inside of an li tag.<br></p>
+
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
+                                </p>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMoreContent" class="readMoreButton"></label>  
+                        </div>
+                        <div class="tip">
+                            <h3>INLINE ELEMENTS</h3>
+                            <input type="checkbox" class="readMore" id="readMoreInline" />
+                            <div class="cover">
+                                <p><span><</span><span class="tagInText">a</span> <span class="optionInText">href</span>=<span class="valueInText">"http://www.example.com"</span><span>></span>...<span><</span><span class="tagInText">/a</span><span>></span><br>
+                                Adds links to external sites via the href attribute.<br></p>
+
+                                <p><span><</span><span class="tagInText">span</span><span>></span>...<span><</span><span class="tagInText">/span</span><span>></span><br>
+                                Span tags allow you to group inline elements.<br></p>
+
+                                <p><span><</span><span class="tagInText">strong</span><span>></span>...<span><</span><span class="tagInText">/strong</span><span>></span><br>
+                                Use to make sections of your text bold.<br></p>
+
+                                <p><span><</span><span class="tagInText">em</span><span>></span>...<span><</span><span class="tagInText">/em</span><span>></span><br>
+                                Use these to make portions of your text italic.<br></p>
+
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
+                                </p>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMoreInline" class="readMoreButton"></label>  
+                        </div>
+                        <div class="tip">
+                            <h3>TABLES</h3>
+                            <input type="checkbox" class="readMore" id="readMoreTables" />
+                            <div class="cover">
+                                <p><span><</span><span class="tagInText">table</span><span>></span>...<span><</span><span class="tagInText">/table</span><span>></span><br>
+                                Use this tag to add tables to your site.<br></p>
+
+                                <p><span><</span><span class="tagInText">thead</span><span>></span>...<span><</span><span class="tagInText">/thead</span><span>></span><br>
+                                Denotes the table head, where you put your columns names.<br></p>
+
+                                <p><span><</span><span class="tagInText">th</span><span>></span>...<span><</span><span class="tagInText">/th</span><span>></span><br>
+                                Use these tags inside your table head to give each column a name. <br></p>
+
+                                <p><span><</span><span class="tagInText">tbody</span><span>></span>...<span><</span><span class="tagInText">/tbody</span><span>></span><br>
+                                Denotes the table body, where all the tabular data goes.<br></p>
+
+                                <p><span><</span><span class="tagInText">tr</span><span>></span>...<span><</span><span class="tagInText">/tr</span><span>></span><br>
+                                Use this tag to denote a table row.<br></p>
+
+                                <p><span><</span><span class="tagInText">td</span><span>></span>...<span><</span><span class="tagInText">/td</span><span>></span><br>
+                                Put each piece of data inside of a data cell, inside of your table row, inside of your table body.<br></p>
+
+                                <p><span class="optionInText">colspan</span>=<span class="valueInText">"2"</span><br>
+                                An attribute that allows you to combine cells in a string.<br></p>
+
+                                <p><span class="optionInText">rowspan</span>=<span class="valueInText">"2"</span><br>
+                                An attribute that allows you to combine cells in a column.<br></p>
+
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+
+                                <p>
+                                    </span><span><</span><span class="tagInText">table</span><span>></span><br>
+                                    <span>&emsp; <</span><span class="tagInText">caption</span><span>></span>List of employees<span><</span><span class="tagInText">/caption</span><span>></span><br>
+                                    <span>&emsp; <</span><span class="tagInText">thead</span><span>></span><br>
+                                    <span>&emsp; &emsp; <</span><span class="tagInText">tr</span><span>></span><br>
+                                    <span>&emsp; &emsp; &emsp; <</span><span class="tagInText">th</span><span>></span>Company<span><</span><span class="tagInText">/th</span><span>></span><br>
+                                    <span>&emsp; &emsp; &emsp; <</span><span class="tagInText">th</span><span>></span>Contact<span><</span><span class="tagInText">/th</span><span>></span><br>
+                                    <span>&emsp; &emsp; &emsp; <</span><span class="tagInText">th</span><span>></span>Country<span><</span><span class="tagInText">/th</span><span>></span><br>
+                                    <span>&emsp; &emsp;<</span><span class="tagInText">/tr</span><span>></span><br>
+                                    <span>&emsp;<</span><span class="tagInText">/thead</span><span>></span><br>
+                                    <span>&emsp;<</span><span class="tagInText">tbody</span><span>></span><br>
+                                    <span>&emsp; &emsp;<</span><span class="tagInText">tr</span><span>></span><br>
+                                    <span>&emsp; &emsp; &emsp; <</span><span class="tagInText">td</span><span>></span>Alfreds Futterkiste<span><</span><span class="tagInText">/td</span><span>></span><br>
+                                    <span>&emsp; &emsp; &emsp; <</span><span class="tagInText">td</span><span>></span>Maria Anders<span><</span><span class="tagInText">/td</span><span>></span><br>
+                                    <span>&emsp; &emsp; &emsp; <</span><span class="tagInText">td </span><span class="optionInText">rowspan</span>=<span class="valueInText">"2"</span><span>></span> Germany<span><</span><span class="tagInText">/td</span><span>></span><br>
+                                    <span>&emsp; &emsp;<</span><span class="tagInText">/tr</span><span>></span><br>
+                                    <span>&emsp; &emsp;<</span><span class="tagInText">tr</span><span>></span><br>
+                                    <span>&emsp; &emsp; &emsp; <</span><span class="tagInText">td</span><span>></span>Alfreds Futterkiste<span><</span><span class="tagInText">/td</span><span>></span><br>
+                                    <span>&emsp; &emsp; &emsp; <</span><span class="tagInText">td</span><span>></span>Maria Anders<span><</span><span class="tagInText">/td</span><span>></span><br>
+                                    <span>&emsp; &emsp;<</span><span class="tagInText">/tr</span><span>></span><br>
+                                    <span>&emsp; &emsp;<</span><span class="tagInText">tr</span><span>></span><br>
+                                    <span>&emsp; &emsp; &emsp; <</span><span class="tagInText">th </span><span class="optionInText">colspan</span>=<span class="valueInText">"2"</span><span>></span> Total:<span><</span><span class="tagInText">/th</span><span>></span><br>
+                                    <span>&emsp; &emsp; &emsp; <</span><span class="tagInText">td</span><span>></span>2<span><</span><span class="tagInText">/td</span><span>></span><br>
+                                    <span>&emsp; &emsp;<</span><span class="tagInText">/tr</span><span>></span><br>
+                                    <span>&emsp;<</span><span class="tagInText">/tbody</span><span>></span><br>
+                                    <span><</span><span class="tagInText">/table</span><span>></span><br>
+                                </p>
+
+                                <p style="font-size: 20px; font-weight: 900;">Result</p>
+
+                                <table>
+                                    <caption>List of employees</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>Company</th>
+                                            <th>Contact</th>
+                                            <th>Country</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Alfreds Futterkiste</td>
+                                            <td>Maria Anders</td>
+                                            <td rowspan="2">Germany</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Alfreds Futterkiste</td>
+                                            <td>Maria Anders</td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">Total:</th>
+                                            <td>2</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMoreTables" class="readMoreButton"></label>   
+                        </div>
+                        <div class="tip">
+                            <h3>LISTS</h3>
+                            <input type="checkbox" class="readMore" id="readMoreLists" />
+                            <div class="cover">
+                                <p><span><</span><span class="tagInText">ul</span><span>></span>...<span><</span><span class="tagInText">/ul</span><span>></span><br>
+                                Unordered lists, perfect for bulleted lists and such.<br></p>
+
+                                <p><span><</span><span class="tagInText">ol</span><span>></span>...<span><</span><span class="tagInText">/ol</span><span>></span><br>
+                                Ordered lists, good for numbered or alphabetical lists.<br></p>
+
+                                <p><span><</span><span class="tagInText">li</span><span>></span>...<span><</span><span class="tagInText">/li</span><span>></span><br>
+                                Each list item goes inside of an li tag.<br></p>
+
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+
+                                <p>
+                                    </span><span><</span><span class="tagInText">ol</span><span>></span><br>
+                                    <span>&emsp; <</span><span class="tagInText">li</span><span>></span>Learning English<span><</span><span class="tagInText">/li</span><span>></span><br>
+                                    <span>&emsp; <</span><span class="tagInText">li</span><span>></span>Learning programming languages<br>
+                                    <span>&emsp; &emsp; <</span><span class="tagInText">ul</span><span>></span><br>
+                                    <span>&emsp; &emsp; &emsp; <</span><span class="tagInText">li</span><span>></span>Java Script<span><</span><span class="tagInText">/li</span><span>></span><br>
+                                    <span>&emsp; &emsp; &emsp; <</span><span class="tagInText">li</span><span>></span>Pyton<span><</span><span class="tagInText">/li</span><span>></span><br>
+                                    <span>&emsp; &emsp; &emsp; <</span><span class="tagInText">li</span><span>></span>Kotlin<span><</span><span class="tagInText">/li</span><span>></span><br>
+                                    <span>&emsp; &emsp;<</span><span class="tagInText">/ul</span><span>></span><br>
+                                    <span>&emsp;<</span><span class="tagInText">/li</span><span>></span><br>
+                                    <span>&emsp;<</span><span class="tagInText">li</span><span>></span>Employment<span><</span><span class="tagInText">/li</span><span>></span><br>
+                                    <span><</span><span class="tagInText">/ol</span><span>></span><br>
+                                </p>
+
+                                <p style="font-size: 20px; font-weight: 900;">Result</p>
+
+                                <ol style="padding-left: 30px;">
+                                    <li>Learning English</li>
+                                    <li>Learning programming languages                                   
+                                        <ul style="padding-left: 40px;">
+                                            <li>Java Script</li>
+                                            <li>Pyton</li>
+                                            <li>Kotlin</li>
+                                        </ul>
+                                    </li>
+                                    <li>Employment</li>
+                                </ol>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMoreLists" class="readMoreButton"></label>  
+                        </div>
+                        <div class="tip">
+                            <h3>Tip 01</h3>
+                            <input type="checkbox" class="readMore" id="readMoreTip01" />
+                            <div class="cover">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam saepe inventore alias ea magnam exercitationem, doloremque deleniti reprehenderit quod ad quisquam blanditiis! Voluptas illo veniam labore repellat ullam at nobis.</p>
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
+                                </p>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMoreTip01" class="readMoreButton"></label>  
+                        </div>
+                        <div class="tip">
+                            <h3>Tip 02</h3>
+                            <input type="checkbox" class="readMore" id="readMoreTip02" />
+                            <div class="cover">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam saepe inventore alias ea magnam exercitationem, doloremque deleniti reprehenderit quod ad quisquam blanditiis! Voluptas illo veniam labore repellat ullam at nobis.</p>
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
+                                </p>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMoreTip02" class="readMoreButton"></label>  
+                        </div>
+                        <div class="tip">
+                            <h3>Tip 03</h3>
+                            <input type="checkbox" class="readMore" id="readMoreTip03" />
+                            <div class="cover">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam saepe inventore alias ea magnam exercitationem, doloremque deleniti reprehenderit quod ad quisquam blanditiis! Voluptas illo veniam labore repellat ullam at nobis.</p>
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
+                                </p>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMoreTip03" class="readMoreButton"></label>  
+                        </div>
+                    </div>
+                    <div class="rightBookmarksBlock"></div> <!--for new right bookmarks whitch created by JS-->
+                </div>
+                <div class="bookmarksBodies" style="display: none;">
+                    <div class="bookmarksBodies__content">
+                        <span style="display: none;">FLEX</span>
+                        <div class="tip">
+                            <h3>FLEX-DIRECTION</h3>
+                            <div>
+                                <p>Flex-direction property controls the direction in which the flex-items are laid along the main axis.</p>
+                                <div class="flexValues">
+                                    <p><span class="optionInText">flex-direction: </span><span class="valueInText">row;</span></p>
+                                    <p><span class="optionInText">flex-direction: </span><span class="valueInText">row-reverse;</span></p>
+                                    <p><span class="optionInText">flex-direction: </span><span class="valueInText">column;</span></p>
+                                    <p><span class="optionInText">flex-direction: </span><span class="valueInText">column-reverse;</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tip">
+                            <h3>JUSTIFY-CONTENT</h3>
+                            <div>
+                                <p>The justify content property defines how flex items are laid out on the main axis.</p>
+                                <div class="flexValues">
+                                    <p><span class="optionInText">justify-content: </span><span class="valueInText">flex-start;</span></p>
+                                    <p><span class="optionInText">justify-content: </span><span class="valueInText">flex-end;</span></p>
+                                    <p><span class="optionInText">justify-content: </span><span class="valueInText">center;</span></p>
+                                    <p><span class="optionInText">justify-content: </span><span class="valueInText">space-between;</span></p>
+                                    <p><span class="optionInText">justify-content: </span><span class="valueInText">space-around;</span></p>
+                                    <p><span class="optionInText">justify-content: </span><span class="valueInText">space-evenly;</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tip">
+                            <h3>ALIGN-ITEMS</h3>
+                            <div>
+                                <p>It defines how flex-items are laid out on the cross axis. This is the difference between the align-items property and justify-content.</p>
+                                <div class="flexValues">
+                                    <p><span class="optionInText">align-items: </span><span class="valueInText">stretch;</span></p>
+                                    <p><span class="optionInText">align-items: </span><span class="valueInText">flex-start;</span></p>
+                                    <p><span class="optionInText">align-items: </span><span class="valueInText">flex-end;</span></p>
+                                    <p><span class="optionInText">align-items: </span><span class="valueInText">center;</span></p>
+                                    <p><span class="optionInText">align-items: </span><span class="valueInText">baseline;</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tip">
+                            <h3>ALIGN-CONTENT</h3>
+                            <div>
+                                <p>It controls how the flex-items are aligned in a multi-line flex container. </p>
+                                <div class="flexValues">
+                                    <p><span class="optionInText">align-content: </span><span class="valueInText">stretch;</span></p>
+                                    <p><span class="optionInText">align-content: </span><span class="valueInText">flex-start;</span></p>
+                                    <p><span class="optionInText">align-content: </span><span class="valueInText">flex-end;</span></p>
+                                    <p><span class="optionInText">align-content: </span><span class="valueInText">center;</span></p>
+                                    <p><span class="optionInText">align-content: </span><span class="valueInText">space-between;</span></p>
+                                    <p><span class="optionInText">align-content: </span><span class="valueInText">space-around;</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tip">
+                            <h3>FLEX-WRAP</h3>
+                            <div>
+                                <p>The flex-wrap property specifies whether the flexible items should be moved to another line or not.</p>
+                                <div class="flexValues">
+                                    <p><span class="optionInText">flex-wrap: </span><span class="valueInText">nowrap;</span></p>
+                                    <p><span class="optionInText">flex-wrap: </span><span class="valueInText">wrap;</span></p>
+                                    <p><span class="optionInText">flex-wrap: </span><span class="valueInText">wrap-reverse;</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tip">
+                            <h3>ORDER (item 2)</h3>
+                            <div>
+                                <p>Simply put, with the order property you can move a flex-item from one position to another. The default value for the order property is 0. It may take on either negative or positive values.
+                                </p>
+                                <div class="flexItemValues">
+                                    <p><span class="optionInText">order: </span><span class="valueInText">0;</span></p>
+                                    <p><span class="optionInText">order: </span><span class="valueInText">-1;</span></p>
+                                    <p><span class="optionInText">order: </span><span class="valueInText">15;</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tip">
+                            <h3>FLEX-GROW and<br> FLEX-SHRINK (item 2)</h3>
+                            <div>
+                                <p>The flex-grow and flex-shrink properties control how much a 
+                                    flex-item should “grow” (extend) if there are extra spaces, or “shrink” if there are no “extra” spaces.
+                                </p>
+                                <div class="flexItemValues">
+                                    <p><span class="optionInText">flex-grow: </span><span class="valueInText">0;</span></p>
+                                    <p><span class="optionInText">flex-grow: </span><span class="valueInText">1;</span></p>
+                                    <p><span class="optionInText">flex-shrink: </span><span class="valueInText">1;</span></p>
+                                    <p><span class="optionInText">flex-shrink: </span><span class="valueInText">0;</span></p>
+                                    <p><span class="optionInText">flex-shrink: </span><span class="valueInText">2;</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tip">
+                            <h3>ALIGN-SELF (item 2)</h3>
+                            <div>
+                                <p>Change the position of a single flex-item along the cross-axis, without affecting the neighboring flex-items.</p>
+                                <div class="flexItemValues">
+                                    <p><span class="optionInText">align-self: </span><span class="valueInText">auto;</span></p>
+                                    <p><span class="optionInText">align-self: </span><span class="valueInText">flex-start;</span></p>
+                                    <p><span class="optionInText">align-self: </span><span class="valueInText">flex-end;</span></p>
+                                    <p><span class="optionInText">align-self: </span><span class="valueInText">center;</span></p>
+                                    <p><span class="optionInText">align-self: </span><span class="valueInText">baseline;</span></p>
+                                    <p><span class="optionInText">align-self: </span><span class="valueInText">stretch;</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flexExample">
+                            <div class="flexExampleText">
+                                <div class="itemsAmount">
+                                    <h3 style="border-radius: 20px;">Amount of items:</h3>
+                                    <div class="itemsAmount_scale">
+                                        <div class="itemsAmount_regulator" id="regulator" style="left: 3px;">3</div>
+                                    </div>
+                                </div>
+                                <h3>CSS code:</h3>
+                                <p class="additionalTextElement">
+                                    <span class="cssElementText">.flexConteiner {</span><br>
+                                    <span class="optionInText">&emsp; display: </span><span class="valueInText">flex;</span><br>
+                                </p>
+                                <span class="cssElementText">}</span> 
+                                <p class="additionalTextElementItem">
+                                    <span class="cssElementText">.flexItem_2 {</span><br>
+                                        <span class="optionInText">&emsp; min-height: </span><span class="valueInText">65px;</span><br>
+                                </p>
+                                <span class="cssElementText">}</span>             
+                            </div>
+                            <div class="flexConteiner">
+                                <div class="flexItem item1" style="width: 55px; height: 80px;">1</div>
+                                <div class="flexItem item2" style="width: 75px; min-height: 65px;">2</div>
+                                <div class="flexItem item3" style="width: 65px; height: 100px;">3</div>
+                                <div class="flexItem item4" style="width: 55px; height: 80px; display: none;">4</div>
+                                <div class="flexItem item5" style="width: 75px; height: 100px; display: none;">5</div>
+                                <div class="flexItem item6" style="width: 65px; height: 85px; display: none;">6</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmarksBodies__content" style="display: none;">
+                        <span style="display: none;">Next1</span>
+                        <div class="tip">
+                            <h3>Tip 01</h3>
+                            <input type="checkbox" class="readMore" id="readMore_CSS_Tab2_Tip01" />
+                            <div class="cover">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam saepe inventore alias ea magnam exercitationem, doloremque deleniti reprehenderit quod ad quisquam blanditiis! Voluptas illo veniam labore repellat ullam at nobis.</p>
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
+                                </p>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMore_CSS_Tab2_Tip01" class="readMoreButton"></label>  
+                        </div>
+                        <div class="tip">
+                            <h3>Tip 02</h3>
+                            <input type="checkbox" class="readMore" id="readMore_CSS_Tab2_Tip02" />
+                            <div class="cover">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam saepe inventore alias ea magnam exercitationem, doloremque deleniti reprehenderit quod ad quisquam blanditiis! Voluptas illo veniam labore repellat ullam at nobis.</p>
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
+                                </p>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMore_CSS_Tab2_Tip02" class="readMoreButton"></label>  
+                        </div>
+                        <div class="tip">
+                            <h3>Tip 03</h3>
+                            <input type="checkbox" class="readMore" id="readMore_CSS_Tab2_Tip03" />
+                            <div class="cover">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam saepe inventore alias ea magnam exercitationem, doloremque deleniti reprehenderit quod ad quisquam blanditiis! Voluptas illo veniam labore repellat ullam at nobis.</p>
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
+                                </p>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMore_CSS_Tab2_Tip03" class="readMoreButton"></label>  
+                        </div>
+                    </div>
+                    <div class="bookmarksBodies__content" style="display: none;">
+                        <span style="display: none;">Next2</span>
+                        <div class="tip">
+                            <h3>Tip 01</h3>
+                            <input type="checkbox" class="readMore" id="readMore_CSS_Tab3_Tip01" />
+                            <div class="cover">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam saepe inventore alias ea magnam exercitationem, doloremque deleniti reprehenderit quod ad quisquam blanditiis! Voluptas illo veniam labore repellat ullam at nobis.</p>
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
+                                </p>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMore_CSS_Tab3_Tip01" class="readMoreButton"></label>  
+                        </div>
+                        <div class="tip">
+                            <h3>Tip 02</h3>
+                            <input type="checkbox" class="readMore" id="readMore_CSS_Tab3_Tip02" />
+                            <div class="cover">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam saepe inventore alias ea magnam exercitationem, doloremque deleniti reprehenderit quod ad quisquam blanditiis! Voluptas illo veniam labore repellat ullam at nobis.</p>
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
+                                </p>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMore_CSS_Tab3_Tip02" class="readMoreButton"></label>  
+                        </div>
+                        <div class="tip">
+                            <h3>Tip 03</h3>
+                            <input type="checkbox" class="readMore" id="readMore_CSS_Tab3_Tip03" />
+                            <div class="cover">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam saepe inventore alias ea magnam exercitationem, doloremque deleniti reprehenderit quod ad quisquam blanditiis! Voluptas illo veniam labore repellat ullam at nobis.</p>
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
+                                </p>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMore_CSS_Tab3_Tip03" class="readMoreButton"></label>  
+                        </div>
+                    </div>
+                    <div class="rightBookmarksBlock"></div>
+                </div>
+                <div class="bookmarksBodies" style="display: none;">
+                    <div class="bookmarksBodies__content">
+                        <span style="display: none;">First</span>
+                        <div class="tip">
+                            <h3>Tip 01</h3>
+                            <input type="checkbox" class="readMore" id="readMore_JS_Tab1_Tip01" />
+                            <div class="cover">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam saepe inventore alias ea magnam exercitationem, doloremque deleniti reprehenderit quod ad quisquam blanditiis! Voluptas illo veniam labore repellat ullam at nobis.</p>
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
+                                </p>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMore_JS_Tab1_Tip01" class="readMoreButton"></label> 
+                        </div>
+                        <div class="tip">
+                            <h3>Tip 02</h3>
+                            <input type="checkbox" class="readMore" id="readMore_JS_Tab1_Tip02" />
+                            <div class="cover">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam saepe inventore alias ea magnam exercitationem, doloremque deleniti reprehenderit quod ad quisquam blanditiis! Voluptas illo veniam labore repellat ullam at nobis.</p>
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
+                                </p>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMore_JS_Tab1_Tip02" class="readMoreButton"></label> 
+                        </div>
+                        <div class="tip">
+                            <h3>Tip 03</h3>
+                            <input type="checkbox" class="readMore" id="readMore_JS_Tab1_Tip03" />
+                            <div class="cover">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam saepe inventore alias ea magnam exercitationem, doloremque deleniti reprehenderit quod ad quisquam blanditiis! Voluptas illo veniam labore repellat ullam at nobis.</p>
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
+                                </p>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMore_JS_Tab1_Tip03" class="readMoreButton"></label> 
+                        </div>
+                        <div class="tip">
+                            <h3>Tip 04</h3>
+                            <input type="checkbox" class="readMore" id="readMore_JS_Tab1_Tip04" />
+                            <div class="cover">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam saepe inventore alias ea magnam exercitationem, doloremque deleniti reprehenderit quod ad quisquam blanditiis! Voluptas illo veniam labore repellat ullam at nobis.</p>
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
+                                </p>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMore_JS_Tab1_Tip04" class="readMoreButton"></label> 
+                        </div>
+                        <div class="tip">
+                            <h3>Tip 05</h3>
+                            <input type="checkbox" class="readMore" id="readMore_JS_Tab1_Tip05" />
+                            <div class="cover">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam saepe inventore alias ea magnam exercitationem, doloremque deleniti reprehenderit quod ad quisquam blanditiis! Voluptas illo veniam labore repellat ullam at nobis.</p>
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
+                                </p>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMore_JS_Tab1_Tip05" class="readMoreButton"></label> 
+                        </div>
+                    </div>
+                    <div class="bookmarksBodies__content" style="display: none;">
+                        <span style="display: none;">Next</span>
+                        <div class="tip">
+                            <h3>Tip 01</h3>
+                            <input type="checkbox" class="readMore" id="readMore_JS_Tab2_Tip01" />
+                            <div class="cover">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam saepe inventore alias ea magnam exercitationem, doloremque deleniti reprehenderit quod ad quisquam blanditiis! Voluptas illo veniam labore repellat ullam at nobis.</p>
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
+                                </p>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMore_JS_Tab2_Tip01" class="readMoreButton"></label>  
+                        </div>
+                        <div class="tip">
+                            <h3>Tip 02</h3>
+                            <input type="checkbox" class="readMore" id="readMore_JS_Tab2_Tip02" />
+                            <div class="cover">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam saepe inventore alias ea magnam exercitationem, doloremque deleniti reprehenderit quod ad quisquam blanditiis! Voluptas illo veniam labore repellat ullam at nobis.</p>
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
+                                </p>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMore_JS_Tab2_Tip02" class="readMoreButton"></label>  
+                        </div>
+                        <div class="tip">
+                            <h3>Tip 03</h3>
+                            <input type="checkbox" class="readMore" id="readMore_JS_Tab2_Tip03" />
+                            <div class="cover">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam saepe inventore alias ea magnam exercitationem, doloremque deleniti reprehenderit quod ad quisquam blanditiis! Voluptas illo veniam labore repellat ullam at nobis.</p>
+                                <p style="font-size: 20px; font-weight: 900;">Example</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
+                                </p>
+                                <div class="limiter"></div>
+                            </div>
+                            <label for="readMore_JS_Tab2_Tip03" class="readMoreButton"></label>  
+                        </div>
+                    </div>
+                    <div class="rightBookmarksBlock"></div>
+                </div>
+            </div>
+        </div>
+        <div class="filler"></div>
+        <!--End of Main block-->
+
+        <!--Additional section. Loaders
+        <div class="mainBox">
+            <div class="loader">
+                <div class="border">
+                    <div class="shape"></div>
+                </div>
+                <p>loading...</p>
+            </div>
+            <div class="loader02">
+                <div class="border02">
+                    <div class="shapeEye01"></div>
+                    <div class="shapeEye02"></div>
+                </div>
+                <p>loading...</p>
+            </div>
+            <div class="loader03">
+                <div class="border03">
+                    <div class="secondTransform">
+                        <div class="shape03_01"></div>
+                        <div class="shape03_02"></div>
+                    </div>
+                </div>
+                <p>loading...</p>
+            </div>
+        </div>
+        -->
+        <!--Footer-->
+        <div class="footer">
+            <h6>Produced by Mr.Hatter 2022</h6>
+            <div class="instaLogo"><a href="https://www.instagram.com/mr.hatter.photo/" target="_blank"><img src="img/ico/insta+.gif" alt="instagram" class="social"></a></div>
+            <div class="facebookLogo"><a href="https://www.facebook.com/KarpinchikAlexey" target="_blank"><img src="img/ico/fb+.gif" alt="fb" class="social"></a></div>
+        </div>
+    </div> 
+</body>
+<script src="js\script.js"></script>
+</html>
