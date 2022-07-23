@@ -40,13 +40,13 @@ document.querySelector('.switch').addEventListener('click', lightOn);
 const bookmarksBlock = document.querySelectorAll('.bookmark');
 const cheatSheet = document.querySelectorAll('.bookmarksBodies');
 const textDecorationH3 = document.querySelectorAll('h3');
-bookmarksBlock[0].style = 'top: 0px;';
+bookmarksBlock[0].style = 'height: 50px;';
 bookmarksBlock.forEach(function(bookmark) {
     bookmark.addEventListener('click', function switchPage(event) {
         bookmarksBlock.forEach(function(bookmark) {
             bookmark.style = 'top: none;';
         });
-        bookmark.style = 'top: 0px;';
+        bookmark.style = 'height: 50px;';
         if (bookmark.id === 'bookmarkHTML') {
             cheatSheet[0].style = 'display: flex;';
             cheatSheet[1].style = 'display: none;';
