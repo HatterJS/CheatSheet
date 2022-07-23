@@ -169,6 +169,9 @@ td, th {
 .bookmark:nth-child(3) {
     background-color: rgb(255, 200, 20);
 }
+.bookmark:nth-child(4) {
+    background-color: rgb(97 218 251);
+}
 .bookmark:hover {
     top: 0;
 }
@@ -304,6 +307,14 @@ td, th {
     border-image: linear-gradient(
         to right bottom,
         rgb(255, 200, 20) 20%,
+        transparent 50%);
+    border-image-slice: 1;
+}
+.bookmarksBodies:nth-child(4) {
+    z-index: 1;
+    border-image: linear-gradient(
+        to right bottom,
+        rgb(97 218 251) 20%,
         transparent 50%);
     border-image-slice: 1;
 }

@@ -36,7 +36,7 @@ function lightOn() {
 
 document.querySelector('.switch').addEventListener('click', lightOn);
 
-//cheatSheet switch HTML/CSS/JS
+//cheatSheet switch HTML/CSS/JS/React
 const bookmarksBlock = document.querySelectorAll('.bookmark');
 const cheatSheet = document.querySelectorAll('.bookmarksBodies');
 const textDecorationH3 = document.querySelectorAll('h3');
@@ -51,6 +51,7 @@ bookmarksBlock.forEach(function(bookmark) {
             cheatSheet[0].style = 'display: flex;';
             cheatSheet[1].style = 'display: none;';
             cheatSheet[2].style = 'display: none;';
+            cheatSheet[3].style = 'display: none;';
             for (i=0; i<textDecorationH3.length; i++) {
                 textDecorationH3[i].style = 'color: rgb(255, 130, 50);';
             };
@@ -58,15 +59,25 @@ bookmarksBlock.forEach(function(bookmark) {
             cheatSheet[0].style = 'display: none;';
             cheatSheet[1].style = 'display: flex;';
             cheatSheet[2].style = 'display: none;';
+            cheatSheet[3].style = 'display: none;';
             for (i=0; i<textDecorationH3.length; i++) {
                 textDecorationH3[i].style = 'color: rgb(50, 180, 255);';
             };
-        } else {
+        } else if (bookmark.id === 'bookmarkJS') {
             cheatSheet[0].style = 'display: none;';
             cheatSheet[1].style = 'display: none;';
             cheatSheet[2].style = 'display: flex;';
+            cheatSheet[3].style = 'display: none;';
             for (i=0; i<textDecorationH3.length; i++) {
                 textDecorationH3[i].style = 'color: rgb(255 200 20);';
+            }
+        } else {
+            cheatSheet[0].style = 'display: none;';
+            cheatSheet[1].style = 'display: none;';
+            cheatSheet[2].style = 'display: none;';
+            cheatSheet[3].style = 'display: flex;';
+            for (i=0; i<textDecorationH3.length; i++) {
+                textDecorationH3[i].style = 'color: rgb(97 218 251);';
             }
         }
     });
