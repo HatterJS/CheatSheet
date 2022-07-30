@@ -130,6 +130,9 @@ td, th {
 .valueInText {
     color: rgb(255, 136, 0);
 }
+.commentInText {
+    color: rgb(24, 146, 65);
+}
 .cssElementText {
     font-weight: 800;
     color: rgb(220, 200, 0);

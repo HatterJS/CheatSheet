@@ -742,7 +742,7 @@
                             </h2>
                         </header>
                         <div class="tip">
-                            <h3>Adding JS to HTML</h3>
+                            <h3>ADDING JS to HTML</h3>
                             <input type="checkbox" class="readMore" id="readMore_JS_Tab1_Tip01" />
                             <div class="cover">
                                 <p>
@@ -773,25 +773,50 @@
                             <label for="readMore_JS_Tab1_Tip01" class="readMoreButton"></label> 
                         </div>
                         <div class="tip">
-                            <h3>Tip 02</h3>
-                            <input type="checkbox" class="readMore" id="readMore_JS_Tab1_Tip02" />
+                            <h3>DATA TYPES</h3>
                             <div class="cover">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam saepe inventore alias ea magnam exercitationem, doloremque deleniti reprehenderit quod ad quisquam blanditiis! Voluptas illo veniam labore repellat ullam at nobis.</p>
-                                <p style="font-size: 20px; font-weight: 900;">Example</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
+                                <p>
+                                    <span class="tagInText">String</span> - represents textual data - <span class="valueInText">"Hello, World!"</span><br>
+                                    <span class="tagInText">Number</span> - an integer or a floating-point number - <span class="valueInText">3, 3.1415, 3e-2</span><br>
+                                    <span class="tagInText">Boolean</span> - any of two values: true or false - <span class="valueInText">true, false</span><br>
+                                    <span class="tagInText">Undefined</span> - a data type whose variable is not initialized - <span class="valueInText">let a;</span><br>
+                                    <span class="tagInText">Null</span> - denotes a null value - <span class="valueInText">let a = null;</span><br>
+                                    <span class="tagInText">BigInt</span> - an integer with arbitrary precision (integer values larger than (2<sup>53</sup>-1)) - <span class="valueInText">900719925124740999n</span><br>
+                                    <span class="tagInText">Symbol</span> - for unique identifiers - <span class="valueInText">let value = Symbol('hello');</span><br>
+                                    <span class="tagInText">Object</span> - key-value pairs of collection of data - <span class="valueInText">let student = { };</span><br>
                                 </p>
-                                <div class="limiter"></div>
                             </div>
-                            <label for="readMore_JS_Tab1_Tip02" class="readMoreButton"></label> 
                         </div>
                         <div class="tip">
-                            <h3>Tip 03</h3>
+                            <h3>OPERATORS</h3>
                             <input type="checkbox" class="readMore" id="readMore_JS_Tab1_Tip03" />
                             <div class="cover">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam saepe inventore alias ea magnam exercitationem, doloremque deleniti reprehenderit quod ad quisquam blanditiis! Voluptas illo veniam labore repellat ullam at nobis.</p>
-                                <p style="font-size: 20px; font-weight: 900;">Example</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
-                                </p>
+                                <p style="font-size: 20px; font-weight: 900;">Assignment Operators</p>
+                                <span class="tagInText">=</span> |assignment operator| <span class="valueInText">a = 7;</span><br>
+                                <span class="tagInText">+=</span> |addition| <span class="valueInText">a+=5;</span><span class="commentInText">//a=a+5</span><br>
+                                <span class="tagInText">-=</span> |subtraction| <span class="valueInText">a-=2;</span><span class="commentInText">//a=a-2</span><br>
+                                <span class="tagInText">*=</span> |multiplication| <span class="valueInText">a*=3;</span><span class="commentInText">//a=a*3</span><br>
+                                <span class="tagInText">/=</span> |division| <span class="valueInText">a/=2;</span><span class="commentInText">//a=a/2</span><br>
+                                <span class="tagInText">%=</span> |remainder| <span class="valueInText">a%=7;</span><span class="commentInText">//a=a%7</span><br>
+                                <span class="tagInText">**=</span> |exponentiation| <span class="valueInText">a**=4;</span><span class="commentInText">//a=a**4</span><br>
+                                <p style="font-size: 20px; font-weight: 900;">Arithmetic Operators</p>
+                                <span class="tagInText">+ - * /</span> |similar to a calculator| <span class="valueInText">a + b;</span><br>
+                                <span class="tagInText">++</span> |increments by 1| <span class="valueInText">a++;</span><span class="commentInText">//a=a+1</span><br>
+                                <span class="tagInText">--</span> |decrements by 1| <span class="valueInText">a--;</span><span class="commentInText">//a=a-1</span><br>
+                                <span class="tagInText">**</span> |Exponentiation| <span class="valueInText">a**3;</span><span class="commentInText">//a=a<sup>3</sup></span><br>
+                                <p style="font-size: 20px; font-weight: 900;">Comparison Operators</p>
+                                <span class="tagInText">==</span> |is equal| <span class="valueInText">2=='2';</span><span class="commentInText">//true</span><br>
+                                <span class="tagInText">===</span> |identical (equal and of same type)| <span class="valueInText">7==='7';</span><span class="commentInText">//false</span><br>
+                                <span class="tagInText">!=</span> |not equal| <span class="valueInText">10!=15</span><span class="commentInText">//true</span><br>
+                                <span class="tagInText">!==</span> |not identical| <span class="valueInText">11!=='11'</span><span class="commentInText">//false</span><br>
+                                <span class="tagInText">></span> |greater than| <span class="valueInText">7>1;</span><span class="commentInText">//true</span><br>
+                                <span class="tagInText"><</span> |less than| <span class="valueInText">4&lt;2;</span><span class="commentInText">//false</span><br>
+                                <span class="tagInText">>=</span> |greater than or equal| <span class="valueInText">5>=3;</span><span class="commentInText">//true</span><br>
+                                <span class="tagInText"><=</span> |less than or equal| <span class="valueInText">7<=7;</span><span class="commentInText">//true</span><br>
+                                <p style="font-size: 20px; font-weight: 900;">Logical Operators</p>
+                                <span class="tagInText">&&</span> |logical AND| <span class="valueInText">(2==2&&7=7);</span><span class="commentInText">//true</span><br>
+                                <span class="tagInText">||</span> |logical OR| <span class="valueInText">(3==1||5==5);</span><span class="commentInText">//true</span><br>
+                                <span class="tagInText">!</span> |logical NOT| <span class="valueInText">!(9==3)</span><span class="commentInText">//true</span><br>
                                 <div class="limiter"></div>
                             </div>
                             <label for="readMore_JS_Tab1_Tip03" class="readMoreButton"></label> 
@@ -1005,7 +1030,8 @@
             <div class="instaLogo"><a href="https://www.instagram.com/mr.hatter.photo/" target="_blank"><img src="img/ico/insta+.gif" alt="instagram" class="social"></a></div>
             <div class="facebookLogo"><a href="https://www.facebook.com/KarpinchikAlexey" target="_blank"><img src="img/ico/fb+.gif" alt="fb" class="social"></a></div>
         </div>
-    </div> 
+    </div>
+    <script src="js/script.js"></script> 
 </body>
-<script src="js/script.js"></script>
+
 </html>
