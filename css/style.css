@@ -133,8 +133,10 @@ td, th {
 .commentInText {
     color: rgb(24, 146, 65);
 }
+.loopsInText {
+    color: rgb(183, 0, 255);
+}
 .cssElementText {
-    font-weight: 800;
     color: rgb(220, 200, 0);
 }
 /*End of Text decoration----------------------------------------------------------*/
