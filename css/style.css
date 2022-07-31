@@ -16,9 +16,9 @@ a:active, a:hover, a:visited {
 }
 .footer {
     display: flex;
+    align-self: flex-end;
     justify-content: center;
-    align-items: center;
-    height: 30px;
+    width: 100%;
     margin-top: 20px;
 }
 .social {
@@ -142,11 +142,24 @@ td, th {
 /*End of Text decoration----------------------------------------------------------*/
 
 /*Headers elements----------------------------------------------------------*/
+.mainContent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
 .page {
     display: flex;
     flex-direction: column;
-    margin: 0px auto ;
     max-width: 1024px;
+}
+.rightSidebar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    height: fit-content;
+    position: sticky;
+    top: 0;
 }
 .topBookmarksBlock {
     display: flex;
@@ -373,21 +386,19 @@ td, th {
 }
 .flexExample {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: flex-start;
+    flex-direction: column;
     margin: 10px;
 }
 .flexExampleText {
-    margin: auto 10px;
-    width: 280px;
+    width: 300px;
     border-radius: 20px;
     background-color: rgb(77, 77, 77);
+    border: 5px solid rgb(255, 255, 255);
     padding: 10px;
 }
 .flexConteiner {
     display: flex;
-    border: 5px solid rgb(77, 77, 77);
+    border: 5px solid rgb(255, 255, 255);
     border-radius: 20px;
     width: 300px;
     height: 300px;
@@ -565,7 +576,6 @@ td, th {
 }
 /*End of Loader 002----------------------------------------------------------*/
 
-/*mainBox element----------------------------------------------------------*/
 .mainBox {
     display: flex;
     justify-content: space-around;
@@ -574,6 +584,8 @@ td, th {
     margin: 0 auto;
     align-content: center;
 }
+
+/*Media requests----------------------------------------------------------*/
 @media (max-width:420px) {
     .mainBox {
         max-width: 200px;
@@ -584,4 +596,20 @@ td, th {
         max-width: 100px;
     }
 }
-/*End of mainBox element----------------------------------------------------------*/
+@media (max-width:1370px) {
+    .flexExample {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .rightSidebar {
+        width: 100%;
+        padding-top: 0px;
+    }
+}
+@media (max-width:640px) {
+    .flexExample {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*End of Media requests----------------------------------------------------------*/
