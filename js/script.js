@@ -114,14 +114,12 @@ rightBookmark.forEach((e) => e.addEventListener('click', rightBookmarkSwitch));
 function rightBookmarkSwitch() {
     this.style='width: 40px; background-color: white;';
     this.children[0].style='color: #303030;';
-    console.log(this.closest('.bookmarksBodies').children.length);
     for (i=0; i < this.closest('.rightBookmarksBlock').children.length; i++){
         if (this.closest('.rightBookmarksBlock').children[i] == this){continue;}
         this.closest('.rightBookmarksBlock').children[i].removeAttribute('style');
         this.closest('.rightBookmarksBlock').children[i].children[0].removeAttribute('style');
     }
     for (i=0; i < this.closest('.bookmarksBodies').children.length-1; i++){
-        console.log(this.closest('.bookmarksBodies').children[i].children[0].textContent);
         if (this.closest('.bookmarksBodies').children[i].children[0].textContent == this.children[0].textContent){
             this.closest('.bookmarksBodies').children[i].style.display = 'flex';
         } else {

@@ -855,13 +855,38 @@
                     </div>
                     <div class="bookmarksBodies__content" style="display: none;">   <!-- Page_02 -->
                         <span style="display: none;">Loops</span>
+                        <header style="width: 100%;">
+                            <h4 style="line-height: 2;">Loops and iteration</h4>
+                            <h2 style="margin: auto 20px; text-align: justify;">
+                                <p>&emsp;Loops are used in JavaScript to perform repeated tasks based on a condition.<br>
+                                &emsp;Conditions typically return true or false. A loop will continue running until the defined condition returns false.</p>
+                            </h2>
+                        </header>
                         <div class="tip">
-                            <h3>Tip 01</h3>
+                            <h3>FOR</h3>
                             <input type="checkbox" class="readMore" id="readMore_JS_Tab2_Tip01" />
                             <div class="cover">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam saepe inventore alias ea magnam exercitationem, doloremque deleniti reprehenderit quod ad quisquam blanditiis! Voluptas illo veniam labore repellat ullam at nobis.</p>
+                                <p>
+                                    &emsp;The <span style="font-weight: bolder;">for</span> loop consists of three optional expressions, followed by a code block:<br>
+                                    &emsp;<span style="font-weight: bolder;">Initialization</span> - this expression runs before the execution of the first loop, and is usually used to create a counter.<br>
+                                    &emsp;<span style="font-weight: bolder;">Condition</span> - this expression is checked each time before the loop runs. If it evaluates to true, the statement or code in the loop is executed. If it evaluates to false, the loop stops. And if this expression is omitted, it automatically evaluates to true.<br>
+                                    &emsp;<span style="font-weight: bolder;">FinalExpression</span> - This expression is executed after each iteration of the loop. This is usually used to increment a counter, but can be used to decrement a counter instead.<br>
+                                    <span class="commentInText">for (initialization; condition; finalExpression) {code}</span>
+                                </p>
                                 <p style="font-size: 20px; font-weight: 900;">Example</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam et ex ullam, ad facere praesentium eaque nisi consequatur ab!
+                                <p>
+                                    <span class="tagInText">const </span><span class="optionInText">counter </span>= <span class="valueInText">5</span>;<br>
+                                    <span class="loopsInText">for </span><span class="optionInText">(i=0; </span><span class="optionInText">i&lt;counter; i++) </span><span class="loopsInText">{</span><br>
+                                    &emsp;<span class="tagInText">console.</span><span class="cssElementText">log(</span><span class="optionInText">i</span> + <span class="valueInText">" string"</span><span class="cssElementText">)</span>;<br>
+                                    <span class="loopsInText">}</span>
+                                </p>
+                                <p style="font-size: 20px; font-weight: 900;">Result</p>
+                                <p>
+                                    0 string <br>
+                                    1 string <br>
+                                    2 string <br>
+                                    3 string <br>
+                                    4 string <br>
                                 </p>
                                 <div class="limiter"></div>
                             </div>
