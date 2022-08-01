@@ -146,12 +146,11 @@ td, th {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 100%;
+    min-height: 100%;
 }
 .page {
     display: flex;
     flex-direction: column;
-    max-width: 1024px;
 }
 .rightSidebar {
     display: flex;
@@ -200,7 +199,6 @@ td, th {
     flex: 1 1 auto;
 }
 .bookmarksBodies {
-    width: 100%;
     border: 5px solid transparent;
 }
 .bookmarksBodies__content{
@@ -210,7 +208,7 @@ td, th {
     box-shadow: 2px 2px 3px black;
     background: rgb(250, 250, 250) url(../img/background/square.gif);
     padding-bottom: 20px;
-    width: 100%;
+    max-width: 900px;
 }
 .rightBookmarksBlock {
     display: flex;
@@ -387,7 +385,7 @@ td, th {
 .flexExample {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: auto 10px;
 }
 .flexExampleText {
     width: 300px;

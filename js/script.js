@@ -10,6 +10,31 @@ window.addEventListener('load', readyLoad);
 function readyLoad() {
     loaderVisibility.style = 'animation: disappearStarter 0s linear 1 1s forwards;';
 }
+//create <div><p>bookmarksName</p></div>
+let addBook = function(text){
+    let divTag = document.createElement('div');
+    divTag.className = 'rightBookmark';
+    let pTag = document.createElement('p');
+    pTag.className = 'rightBookmarkText';
+    pTag.innerText = text;
+    divTag.append(pTag);
+    return divTag;
+}
+const cheatSheet = document.querySelectorAll('.bookmarksBodies');
+cheatSheet.forEach(function(e){
+    const bookmarkContentBlock = e.querySelectorAll('.bookmarksBodies__content');
+    const rightBookmarkItem = e.querySelector('.rightBookmarksBlock');
+    for (i=0; i < bookmarkContentBlock.length; i++){
+        let rightBookmarkName = bookmarkContentBlock[i].children[0].textContent;
+        rightBookmarkItem.append(addBook(rightBookmarkName));
+    }
+});
+//first rightBookmark style
+const firstRightBookmark = document.querySelectorAll('.rightBookmarksBlock');
+firstRightBookmark.forEach((e) => {
+    e.children[0].style='width: 40px; background-color: white;';
+    e.children[0].children[0].style='color: #303030;';
+});
 
 //Light / Dark theme switch
 const textDecorationH1 = document.querySelector('h1');
@@ -17,7 +42,6 @@ const textDecorationH5 = document.querySelector('h5');
 const textDecorationH6 = document.querySelector('h6');
 const switchButton = document.querySelector('.lightButton');
 const bodyBackground = document.querySelector('body');
-
 function lightOn() {
     if (window.getComputedStyle(switchButton).getPropertyValue('background-color') < 'rgba(255, 255, 255, 0.5)') {
         switchButton.style = 'left: 30px; background: rgba(255, 255, 255, 0.6); border: 2px solid rgba(0, 0, 0, 0.6);';
@@ -33,83 +57,46 @@ function lightOn() {
         textDecorationH6.style = 'color: null';
     }
 }
-
 document.querySelector('.switch').addEventListener('click', lightOn);
 
 //cheatSheet switch HTML/CSS/JS/React
 const bookmarksBlock = document.querySelectorAll('.bookmark');
-const cheatSheet = document.querySelectorAll('.bookmarksBodies');
 const textDecorationH3 = document.querySelectorAll('h3');
-bookmarksBlock[0].style = 'height: 50px;';
-bookmarksBlock.forEach(function(bookmark) {
-    bookmark.addEventListener('click', function switchPage(event) {
-        bookmarksBlock.forEach(function(bookmark) {
-            bookmark.style = 'top: none;';
-        });
-        bookmark.style = 'height: 50px;';
-        if (bookmark.id === 'bookmarkHTML') {
-            cheatSheet[0].style = 'display: flex;';
-            cheatSheet[1].style = 'display: none;';
-            cheatSheet[2].style = 'display: none;';
-            cheatSheet[3].style = 'display: none;';
-            for (i=0; i<textDecorationH3.length; i++) {
-                textDecorationH3[i].style = 'color: rgb(255, 130, 50);';
-            };
-        } else if (bookmark.id === 'bookmarkCSS') {
-            cheatSheet[0].style = 'display: none;';
-            cheatSheet[1].style = 'display: flex;';
-            cheatSheet[2].style = 'display: none;';
-            cheatSheet[3].style = 'display: none;';
-            for (i=0; i<textDecorationH3.length; i++) {
-                textDecorationH3[i].style = 'color: rgb(50, 180, 255);';
-            };
-        } else if (bookmark.id === 'bookmarkJS') {
-            cheatSheet[0].style = 'display: none;';
-            cheatSheet[1].style = 'display: none;';
-            cheatSheet[2].style = 'display: flex;';
-            cheatSheet[3].style = 'display: none;';
-            for (i=0; i<textDecorationH3.length; i++) {
-                textDecorationH3[i].style = 'color: rgb(255 200 20);';
-            }
+const flexExampleBlock = document.querySelector('.flexExample');
+const rightBookmark = document.querySelectorAll('.rightBookmark');
+bookmarksBlock.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        bookmarksBlock.forEach((item) => {item.style = 'height: none;';});
+        item.style = 'height: 50px;';
+        cheatSheet.forEach((item) => {item.style = 'display: none;'});
+        cheatSheet[index].style =  'display: flex;';
+
+        //show/hide flexExampleBlock
+        if (index == 1) {
+            rightBookmark.forEach((item) => {
+                if ((item.children[0].textContent == 'FLEX')&&(item.style.width == '40px')) {
+                    flexExampleBlock.style = 'display: flex;';
+                }
+            })
         } else {
-            cheatSheet[0].style = 'display: none;';
-            cheatSheet[1].style = 'display: none;';
-            cheatSheet[2].style = 'display: none;';
-            cheatSheet[3].style = 'display: flex;';
-            for (i=0; i<textDecorationH3.length; i++) {
-                textDecorationH3[i].style = 'color: rgb(97 218 251);';
-            }
+            flexExampleBlock.style = 'display: none;';
+        }
+
+        //decorate headers
+        if (item.id === 'bookmarkHTML') {
+            textDecorationH3.forEach((item) => {item.style = 'color: rgb(255, 130, 50);';})
+        } else if (item.id === 'bookmarkCSS') {
+            textDecorationH3.forEach((item) => {item.style = 'color: rgb(50, 180, 255);';})
+        } else if (item.id === 'bookmarkJS') {
+            textDecorationH3.forEach((item) => {item.style = 'color: rgb(255 200 20);';})
+        } else {
+            textDecorationH3.forEach((item) => {item.style = 'color: rgb(97 218 251);';})
         }
     });
 });
 
 //right bookmarks switch ------------------------------------ START ----->
-//create <div><p>bookmarksName</p></div>
-let addBook = function(text){
-    let divTag = document.createElement('div');
-    divTag.className = 'rightBookmark';
-    let pTag = document.createElement('p');
-    pTag.className = 'rightBookmarkText';
-    pTag.innerText = text;
-    divTag.append(pTag);
-    return divTag;
-}
-cheatSheet.forEach(function(e){
-    const bookmarkContentBlock = e.querySelectorAll('.bookmarksBodies__content');
-    const rightBookmarkItem = e.querySelector('.rightBookmarksBlock');
-    for (i=0; i < bookmarkContentBlock.length; i++){
-        let rightBookmarkName = bookmarkContentBlock[i].children[0].textContent;
-        rightBookmarkItem.append(addBook(rightBookmarkName));
-    }
-});
-//first rightBookmark style
-const firstRightBookmark = document.querySelectorAll('.rightBookmarksBlock');
-firstRightBookmark.forEach((e) => {
-    e.children[0].style='width: 40px; background-color: white;';
-    e.children[0].children[0].style='color: #303030;';
-});
 //content switcher by clicking the right bookmark
-const rightBookmark = document.querySelectorAll('.rightBookmark');
 rightBookmark.forEach((e) => e.addEventListener('click', rightBookmarkSwitch));
 function rightBookmarkSwitch() {
     this.style='width: 40px; background-color: white;';
@@ -126,6 +113,8 @@ function rightBookmarkSwitch() {
             this.closest('.bookmarksBodies').children[i].style.display = 'none';
         }
     }
+
+    flexExampleBlock.style.display = (this.children[0].textContent == 'FLEX') ? 'flex' : 'none'; //show/hide CSS Flex example
 }
 //right bookmarks switch ------------------------------------ END ----->
 
